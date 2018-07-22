@@ -1,0 +1,8 @@
+app:
+  config:
+    property:
+      string: DEV - String Property
+      long: 200
+      boolean: false
+      random: ${random.long}
+      env: DEV - Environment Property
