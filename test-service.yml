@@ -1,8 +1,8 @@
 app:
   config:
     property:
-      string: DEV - String Property
-      long: 999
+      string: DEViiiiiiiiii - String Property
+      long: 22
       boolean: false
       random: ${random.long}
-      env: DEVE - Environment Property
+      env: DEViiiii - Environment Property
