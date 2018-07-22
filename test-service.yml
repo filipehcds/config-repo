@@ -6,3 +6,4 @@ app:
       boolean: false
       random: ${random.long}
       env: DEViiiii - Environment Property
+      teste: lol
