@@ -2,7 +2,7 @@ app:
   config:
     property:
       string: DEV - String Property
-      long: 201
+      long: 202
       boolean: false
       random: ${random.long}
       env: DEV - Environment Property
