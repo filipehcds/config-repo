@@ -1,24 +1,9 @@
 server:
   port: ${PORT:8081}
 
-app:
-  config:
-    property:
-      string: Filipe Property
-      long: 100
-      boolean: true
-      random: ${random.long}
-      env: Environment Property
-
----
-spring:
-  profiles: dev
-
-app:
-  config:
-    property:
-      string: DEV - String Property
-      long: 200
-      boolean: false
-      random: ${random.long}
-      env: DEV - Environment Property
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
