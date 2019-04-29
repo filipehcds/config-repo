@@ -17,7 +17,7 @@ customer-service:
 logging:
   level:
     br.com.microservices.cardservice.client.CustomerClient: DEBUG   
-   
+
 feign:
   compression:
     request:
