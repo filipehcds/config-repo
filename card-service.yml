@@ -27,7 +27,7 @@ feign:
       
 hystrix:
   command:
-    AlunoClient#getAllAlunos():
+    CustomerClient#getTest():
       execution:
         isolation:
           strategy: SEMAPHORE
