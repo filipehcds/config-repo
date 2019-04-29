@@ -13,3 +13,14 @@ customer-service:
     eureka:
       enabled: true
     ServerListRefreshInterval: 15000
+    
+logging:
+  level:
+    br.com.microservices.cardservice.client.CustomerClient: DEBUG   
+   
+feign:
+  compression:
+    request:
+      enabled: true
+    response:
+      enabled: true 
