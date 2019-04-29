@@ -19,6 +19,8 @@ logging:
     br.com.microservices.customerservice.client.CardClient: DEBUG  
    
 feign:
+  hystrix:
+    enabled: true
   compression:
     request:
       enabled: true
