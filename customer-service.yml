@@ -23,4 +23,19 @@ feign:
     request:
       enabled: true
     response:
-      enabled: true 
+      enabled: true
+
+hystrix:
+  command:
+    AlunoClient#getAllAlunos():
+      execution:
+        isolation:
+          strategy: SEMAPHORE
+          semaphore:
+            maxConcurrentRequests: 5
+      fallback:
+        isolation:
+          semaphore:
+            maxConcurrentRequests: 5
+      circuitBreaker:
+        requestVolumeThreshold: 5
