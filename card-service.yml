@@ -27,6 +27,12 @@ feign:
     response:
       enabled: true
       
+management:
+  endpoints:
+    web:
+      exposure:
+        include: hystrix.stream
+      
 hystrix:
   command:
     CustomerClient#getTest():
