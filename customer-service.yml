@@ -12,3 +12,4 @@ card-service:
   ribbon:
     eureka:
       enabled: true
+    ServerListRefreshInterval: 15000
