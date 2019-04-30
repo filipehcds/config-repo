@@ -12,7 +12,7 @@ management:
   metrics:
     export:
       datadog:
-        api-key: ab58f6968807ac5c812870bd6a63db80
+        api-key: "ab58f6968807ac5c812870bd6a63db80"
         enabled: true
         step: 1m
 
