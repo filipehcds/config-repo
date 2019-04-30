@@ -1,0 +1,23 @@
+server:
+  port: ${PORT:8000}
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://eurekaUser:eurekaPassword@localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    
+zuul:
+  sensitiveHeaders: Cookie,Set-Cookie
+  routes:
+    card-service:
+      path: /card/**
+      serviceId: card-service
+    customer-service:
+      path: /customer/**
+      serviceId: customer-service
+
+ribbon:
+  eureka:
+    enabled: true
