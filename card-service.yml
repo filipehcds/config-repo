@@ -11,11 +11,10 @@ eureka:
 management:
   metrics:
     export:
-      datadog:
-        api-key: 47d544cb93a2408d00138f7ed92d857a
+      appoptics:
+        api-token: d1a331ee95302b4b078db6dea85a2ad3b1d8090466a4dc8c66d0ecd9dad42c97
         enabled: true
         step: 1m
-        application-key: e8e0056bf968dfaa924033e32d2d3451c2a7b8dc
 
 spring:
   zipkin:
