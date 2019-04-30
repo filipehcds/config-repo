@@ -32,20 +32,6 @@ management:
     web:
       exposure:
         include: hystrix.stream
-      
-security:
-  sessions: stateless
-  basic:
-    enabled: false
-  user:
-    password: none    
-  oauth2:
-    resource:
-      jwt:
-        keyValue: |
-            -----BEGIN PUBLIC KEY-----
-            MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5NQ1+937e2MuQ3HQhBKz+g7+ibhOyxzfmMWNTZRlixeHZoJ63gfussHuauNqOQcXEQ2MwRR2O5mYvf/w03xYj9D/cgiwHDwUl7mdXzLG2KQdI/Os+Pd8DrYzN3benubiq9dGO72FnH332Aiio78DNdjXIHlEip7iNOtlBsaWwyTn4DOIMn7eo+8I6C5BxXYUpJksgJOI0o90t8zEwul2IXJBa1eD4eiBsb6p/8Z3Bicr/CfzKrdKeXkE6N2sEf5JWxb3s3TpYsPi1qMM4tqSixHyfdt7IpLvz4MgnHscqJkS5ixUoIrqvWbpRKc5TGYrr3M88tKf+MNzrqERTyaLtQIDAQAB
-            -----END PUBLIC KEY-----
 
 hystrix:
   command:
