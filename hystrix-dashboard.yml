@@ -1,6 +1,13 @@
 server:
   port: ${PORT:7979}
 
+spring:
+  security:
+    user:
+      name: hystrixUser
+      password: hystrixPassword
+      roles: SYSTEM
+
 eureka:
   client:
     serviceUrl:
