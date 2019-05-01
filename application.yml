@@ -27,6 +27,11 @@ spring:
 ---
 spring:
   profiles: docker
+  zipkin:
+    base-url: http://zipkin-server:9411/
+  sleuth:
+    sampler:
+      probability: 1.0
   #rabbitmq:
   #  host: rabbitmq
   #  port: 5672
@@ -38,15 +43,8 @@ spring:
   #  port: 5000
 
 eureka:
- client:
-   serviceUrl:
-     defaultZone: ${EUREKA_URI:http://eurekaUser:eurekaPassword@eureka-server:8761/eureka}
- instance:
-   preferIpAddress: true
-   
-spring:
-  zipkin:
-    base-url: http://zipkin-server:9411/
-  sleuth:
-    sampler:
-      probability: 1.0
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://eurekaUser:eurekaPassword@eureka-server:8761/eureka}
+  instance:
+    preferIpAddress: true
