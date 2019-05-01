@@ -7,13 +7,6 @@ spring:
       name: hystrixUser
       password: hystrixPassword
       roles: SYSTEM
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: ${EUREKA_URI:http://eurekaUser:eurekaPassword@localhost:8761/eureka}
-  instance:
-    preferIpAddress: true
     
 turbine:
   appConfig: customer-service,card-service
