@@ -4,8 +4,8 @@ server:
 info:
   id: ${spring.application.name}
  
-logging:
-  level: info
+#logging:
+  #level: info
   #logstash:
   #  host: localhost
   #  port: 5000
@@ -24,8 +24,8 @@ spring:
   #  host: rabbitmq
   #  port: 5672
 
-logging:
-  level: info
+#logging:
+  #level: info
   #logstash:
   #  host: logstash
   #  port: 5000
