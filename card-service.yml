@@ -8,14 +8,6 @@ eureka:
   instance:
     preferIpAddress: true
 
-management:
-  metrics:
-    export:
-      appoptics:
-        api-token: d1a331ee95302b4b078db6dea85a2ad3b1d8090466a4dc8c66d0ecd9dad42c97
-        enabled: true
-        step: 1m
-
 spring:
   zipkin:
     base-url: http://localhost:9411/
