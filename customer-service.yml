@@ -47,3 +47,13 @@ hystrix:
             maxConcurrentRequests: 5
       circuitBreaker:
         requestVolumeThreshold: 5
+---
+spring:
+  profiles: docker
+
+spring:
+  zipkin:
+    base-url: http://zipkin-server:9411/
+  sleuth:
+    sampler:
+      probability: 1.0
