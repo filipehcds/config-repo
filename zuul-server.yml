@@ -21,27 +21,3 @@ zuul:
 ribbon:
   eureka:
     enabled: true
----
-spring:
-  profiles: docker
-
-spring:
-  zipkin:
-    base-url: http://zipkin-server:9411/
-  sleuth:
-    sampler:
-      probability: 1.0
-      
-zuul:
-  sensitiveHeaders: Cookie,Set-Cookie
-  routes:
-    card-service:
-      path: /card/**
-      serviceId: card-service
-    customer-service:
-      path: /customer/**
-      serviceId: customer-service
-
-ribbon:
-  eureka:
-    enabled: true
